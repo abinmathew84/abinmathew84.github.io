@@ -192,5 +192,10 @@
         left: auto !important;
         display: inline-block;
         margin-bottom: 1rem;
+        margin-top: -7.5rem; /* Add negative margin to create space between date and timeline */
+    }
+    
+    .timeline-item {
+        padding-top: 4.5rem; /* Add padding to the top of timeline items for better spacing */
     }
 }

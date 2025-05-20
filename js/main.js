@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Awards data:', window.awardsData);
     console.log('Experience data:', window.experienceData);
     console.log('Testimonials data:', window.testimonialsData);
+    console.log('Hero data:', window.heroData);
+    console.log('Education data:', window.educationData);
+    
+    // Render hero section from data
+    renderHero();
     
     // Render skills from data
     renderSkills();
@@ -29,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Render testimonials from data
     renderTestimonials();
+    
+    // Render education from data
+    renderEducation();
     
     // Dark mode toggle functionality
     const darkModeToggle = document.getElementById('darkModeToggle');
@@ -404,6 +412,57 @@ function renderTestimonials() {
         `;
         
         testimonialsContainer.appendChild(testimonialElement);
+    });
+}
+
+// Function to render hero section from data
+function renderHero() {
+    const heroNameElement = document.querySelector('.hero-name');
+    const heroTitleElement = document.querySelector('.hero-title');
+    const heroTagNameElement = document.querySelector('.tag-name');
+    const heroTagActionElement = document.querySelector('.tag-action');
+    
+    if (heroNameElement) heroNameElement.textContent = window.heroData.name;
+    if (heroTitleElement) heroTitleElement.textContent = window.heroData.title;
+    if (heroTagNameElement) heroTagNameElement.textContent = window.heroData.tagName;
+    if (heroTagActionElement) heroTagActionElement.textContent = window.heroData.tagAction;
+}
+
+// Function to render education from data
+function renderEducation() {
+    const educationTimeline = document.querySelector('.education-timeline');
+    if (!educationTimeline) return;
+    
+    // Clear existing content
+    educationTimeline.innerHTML = '';
+    
+    // Render each education item
+    window.educationData.forEach((education, index) => {
+        const delay = 100 + (index * 100);
+        
+        const timelineItem = document.createElement('div');
+        timelineItem.className = 'timeline-item';
+        timelineItem.setAttribute('data-aos', 'fade-up');
+        timelineItem.setAttribute('data-aos-delay', delay);
+        
+        timelineItem.innerHTML = `
+            <div class="timeline-date">${education.period}</div>
+            <div class="timeline-dot">
+                ${education.icon}
+            </div>
+            <div class="timeline-content">
+                <h3>${education.degree}</h3>
+                <p>${education.field}</p>
+                <div class="institution">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                    <span>${education.institution}</span>
+                </div>
+            </div>
+        `;
+        
+        educationTimeline.appendChild(timelineItem);
     });
 }
     
