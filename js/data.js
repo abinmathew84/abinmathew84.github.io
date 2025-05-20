@@ -111,9 +111,9 @@ window.projectsData = [
 
 // About data
 window.aboutData = {
-    bio: "Hello! I'm Abin Mathew, a passionate software developer with a keen eye for design and a love for creating elegant, user-friendly applications. With a background in [Your Background], I specialize in building modern web applications that combine functionality with aesthetic appeal.",
-    journey: "My journey in tech began [Your Journey], and since then, I've been constantly learning and evolving my skills to stay at the forefront of web development trends and best practices.",
-    hobbies: "When I'm not coding, you can find me [Your Hobbies/Interests].",
+    bio: "Hello! I'm Abin Mathew, a dedicated software engineer with 17+ years of experience crafting robust, scalable applications across web, desktop, API, and enterprise platforms. I thrive on turning complex problems into elegant solutions and love working with teams to bring ideas to life.",
+    journey: "My journey in tech has taken me through leading development teams, mentoring fellow engineers, and closely collaborating with stakeholders to deliver impactful results. Lately, I've been exploring the power of AI, building smart chatbots and intelligent systems that push boundaries.",
+    hobbies: "I'm passionate about continuous learning, emerging technologies, and driving innovation through collaboration. Whether it’s a challenging project or a new tech trend, I’m always excited to dive in and grow.",
     image: "" // Add image URL if available
 };
 
