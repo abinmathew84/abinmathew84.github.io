@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Projects data:', window.projectsData);
     console.log('About data:', window.aboutData);
     console.log('Contact data:', window.contactData);
+    console.log('Awards data:', window.awardsData);
     
     // Render skills from data
     renderSkills();
@@ -17,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Render contact information from data
     renderContact();
+    
+    // Render awards from data
+    renderAwards();
     
     // Dark mode toggle functionality
     const darkModeToggle = document.getElementById('darkModeToggle');
@@ -159,6 +163,35 @@ function renderContact() {
         if (linkedinLink) linkedinLink.href = linkedin;
         if (twitterLink) twitterLink.href = twitter;
     }
+}
+
+// Function to render awards from data
+function renderAwards() {
+    const awardsContainer = document.getElementById('awards-container');
+    if (!awardsContainer) return;
+    
+    // Clear existing content
+    awardsContainer.innerHTML = '';
+    
+    // Render each award
+    window.awardsData.forEach((award, index) => {
+        const delay = 100 + (index * 50);
+        
+        const awardElement = document.createElement('div');
+        awardElement.className = 'award-item';
+        awardElement.setAttribute('data-aos', 'fade-up');
+        awardElement.setAttribute('data-aos-delay', delay);
+        
+        awardElement.innerHTML = `
+            <div class="award-logo">
+                ${award.logo}
+            </div>
+            <h3 class="award-title">${award.title}</h3>
+            <p class="award-year">${award.year}</p>
+        `;
+        
+        awardsContainer.appendChild(awardElement);
+    });
 }
     
     // Mobile menu functionality

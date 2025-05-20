@@ -128,4 +128,77 @@ window.contactData = {
     }
 };
 
+// Awards data
+window.awardsData = [
+    {
+        title: "Creative Circle Awards 1",
+        year: "2023",
+        logo: `<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black dark:text-white">
+            <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="5" fill="none"/>
+        </svg>`
+    },
+    {
+        title: "The Dieline Package Design Awards",
+        year: "2022",
+        logo: `<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black dark:text-white">
+            <path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="5" fill="none"/>
+        </svg>`
+    },
+    {
+        title: "Danish Design Awards",
+        year: "2021",
+        logo: `<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black dark:text-white">
+            <path d="M50 10C72.0914 10 90 27.9086 90 50C90 72.0914 72.0914 90 50 90C27.9086 90 10 72.0914 10 50C10 27.9086 27.9086 10 50 10Z" stroke="currentColor" stroke-width="5" fill="none"/>
+            <path d="M30 50L70 50" stroke="currentColor" stroke-width="5"/>
+            <path d="M50 30L50 70" stroke="currentColor" stroke-width="5"/>
+        </svg>`
+    },
+    {
+        title: "Pentawards",
+        year: "2020",
+        logo: `<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black dark:text-white">
+            <path d="M50 10L90 50L50 90L10 50L50 10Z" stroke="currentColor" stroke-width="5" fill="none"/>
+        </svg>`
+    },
+    {
+        title: "American Graphic Design Awards",
+        year: "2019",
+        logo: `<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black dark:text-white">
+            <path d="M20 20H80V80H20V20Z" stroke="currentColor" stroke-width="5" fill="none"/>
+            <path d="M35 35H65V65H35V35Z" stroke="currentColor" stroke-width="5" fill="none"/>
+            <path d="M20 20L35 35" stroke="currentColor" stroke-width="5"/>
+            <path d="M80 20L65 35" stroke="currentColor" stroke-width="5"/>
+            <path d="M20 80L35 65" stroke="currentColor" stroke-width="5"/>
+            <path d="M80 80L65 65" stroke="currentColor" stroke-width="5"/>
+        </svg>`
+    },
+    {
+        title: "D&AD Awards",
+        year: "2018",
+        logo: `<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black dark:text-white">
+            <path d="M50 10L60 40H90L65 60L75 90L50 70L25 90L35 60L10 40H40L50 10Z" stroke="currentColor" stroke-width="3" fill="none"/>
+        </svg>`
+    },
+    {
+        title: "Red Dot Awards",
+        year: "2017",
+        logo: `<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black dark:text-white">
+            <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="5" fill="none"/>
+            <path d="M30 50C30 38.9543 38.9543 30 50 30C61.0457 30 70 38.9543 70 50C70 61.0457 61.0457 70 50 70C38.9543 70 30 61.0457 30 50Z" stroke="currentColor" stroke-width="3" fill="none"/>
+            <path d="M50 30L50 70" stroke="currentColor" stroke-width="3"/>
+            <path d="M30 50L70 50" stroke="currentColor" stroke-width="3"/>
+        </svg>`
+    },
+    {
+        title: "The London International Awards",
+        year: "2016",
+        logo: `<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black dark:text-white">
+            <path d="M10 50H90" stroke="currentColor" stroke-width="5"/>
+            <path d="M50 10V90" stroke="currentColor" stroke-width="5"/>
+            <path d="M25 25L75 75" stroke="currentColor" stroke-width="5"/>
+            <path d="M75 25L25 75" stroke="currentColor" stroke-width="5"/>
+        </svg>`
+    }
+];
+
 // No need to export as we're using window objects
