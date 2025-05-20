@@ -175,78 +175,78 @@ window.awardsData = [
 // Experience data
 window.experienceData = [
     {
-        title: "Senior Software Engineer @ Company Name 1",
-        period: "Jan 2023 - Present",
-        location: "London, UK",
-        website: "company1.com",
+        title: "Senior Application Developer @ University of Nottingham",
+        period: "May 2021 - Present",
+        location: "Nottingham, UK",
+        website: "https://www.nottingham.ac.uk/",
         description: "Led the development of key features for the company's flagship product, resulting in a 30% increase in user engagement. Collaborated with cross-functional teams to implement new technologies and improve existing systems.",
-        skills: ["React", "Node.js", "TypeScript"],
+        skills: ["C#.NET", "VB.NET", "SPFX", "Node.js", "React", "TypeScript", "Microsoft Power Platform", "Azure DevOps", "Azure Cloud Services", "React", "Gen AI", "SQL Server"],
         logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff5722" class="w-full h-full">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
             </svg>`
     },
     {
-        title: "Software Engineer @ Company Name 2",
-        period: "Mar 2020 - Dec 2022",
-        location: "Manchester, UK",
-        website: "company2.com",
+        title: "Senior Systems Analyst @ UST Global",
+        period: "May 2019 - Apr 2021",
+        location: "Trivandrum, India",
+        website: "https://www.ust.com/",
         description: "Developed and maintained web applications using modern JavaScript frameworks. Implemented responsive designs and optimized application performance.",
-        skills: ["JavaScript", "Vue.js", "CSS"],
+        skills: ["C#.NET", "Java", "SQL Server", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "IIS", "Tomcat", "Apache2"],
         logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4f46e5" class="w-full h-full">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
             </svg>`
     },
     {
-        title: "Developer @ Company Name 3",
-        period: "Jun 2018 - Feb 2020",
-        location: "Birmingham, UK",
-        website: "company3.com",
+        title: "Onsite Coordinator (UST) @ Experian",
+        period: "Jul 2017 - Apr 2019",
+        location: "Nottingham, UK",
+        website: "https://www.experian.co.uk/",
         description: "Worked on backend systems and APIs. Collaborated with the frontend team to ensure seamless integration.",
-        skills: ["Java", "Spring", "SQL"],
+        skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
         logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#10b981" class="w-full h-full">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
             </svg>`
     },
     {
-        title: "Junior Developer @ Company Name 4",
-        period: "Sep 2016 - May 2018",
-        location: "Leeds, UK",
-        website: "company4.com",
+        title: "Onsite Coordinator (NTT Data) @ Experian",
+        period: "May 2016 - Jun 2017",
+        location: "Nottingham, UK",
+        website: "https://www.nttdata.com/",
         description: "Assisted in the development of web applications and learned various technologies and frameworks.",
-        skills: ["HTML", "CSS", "JavaScript"],
+        skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
         logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#f59e0b" class="w-full h-full">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
             </svg>`
     },
     {
-        title: "Software Developer Intern @ Company Name 5",
-        period: "Jan 2015 - Aug 2016",
-        location: "Bristol, UK",
-        website: "company5.com",
+        title: "Onsite Coordinator (Dell International Services) @ Experian",
+        period: "May 2013 - May 2016",
+        location: "Nottingham, UK",
+        website: "https://www.dell.com/",
         description: "Gained hands-on experience in software development and worked on various projects under supervision.",
-        skills: ["C#", ".NET"],
+        skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
         logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#6366f1" class="w-full h-full">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
             </svg>`
     },
     {
-        title: "Technical Support @ Company Name 6",
-        period: "Jun 2013 - Dec 2014",
-        location: "Glasgow, UK",
-        website: "company6.com",
+        title: "Software Development Analyst @ Dell International Services",
+        period: "Jan 2010 - May 2013",
+        location: "Bangalore, India",
+        website: "https://www.dell.com/",
         description: "Provided technical support to customers and resolved various software and hardware issues.",
-        skills: ["Customer Support", "Troubleshooting"],
+        skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
         logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ec4899" class="w-full h-full">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
             </svg>`
     },
     {
-        title: "IT Support @ Company Name 7",
-        period: "Feb 2012 - May 2013",
-        location: "Edinburgh, UK",
-        website: "company7.com",
+        title: "Software Engineer @ Global Innova Technologies",
+        period: "Jan 2007 - Jan 2009",
+        location: "Bangalore, India",
+        website: "http://globalinnovatechnologies.com/",
         description: "Provided IT support and assistance to staff members. Managed hardware inventory and basic system administration tasks.",
-        skills: ["IT Support", "Hardware", "Windows"],
+        skills: ["C#,", "Java", "SQL Server", "MySQL", "Ajax", "JQuery"],
         logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#a855f7" class="w-full h-full">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
             </svg>`
@@ -256,22 +256,22 @@ window.experienceData = [
 // Testimonials data
 window.testimonialsData = [
     {
-        name: "Jonathan Brazeau",
-        title: "Product Design Leader at ChowNow",
+        name: "Mike Rowley",
+        title: "IT & Systems Data Manager at East Midlands Railway",
         image: "https://randomuser.me/api/portraits/men/32.jpg",
-        content: "Working with Matthew was an absolute game-changer for our company. He has this incredible knack for knowing exactly how a mockup is supposed to look and feel on the page. He was always collaborative and open to feedback and quick to offer thoughtful suggestions that elevated the design even further. It's rare to find someone who balances technical expertise with such a great eye for detail. He made the entire process seamless, and honestly, I'd jump at the chance to work with them again"
+        content: "Abin was part of the wider development team at Experian when I was a Software Development Manager. Although he didn't work on my team he was always available to help, and was a very well regarded member of the development community. Abin was extremely hard working and dedicated to his role, and also sought to develop himself further, learning new technologies and looking for areas where he could use these to improve how we worked. He's certainly someone l'd be glad to have on my team."
     },
     {
-        name: "Trevor Streiber",
-        title: "Lead Software Engineer at NewRelic",
+        name: "Charlie Pitt",
+        title: "Head of Product Centre at University of Nottingham",
         image: "https://randomuser.me/api/portraits/men/75.jpg",
-        content: "Matt is AMAZING! If you have any doubt about hiring him, ask me – he'll never disappoint you!"
+        content: "Abin is AMAZING! If you have any doubt about hiring him, ask me – he'll never disappoint you!"
     },
     {
-        name: "Rick Hou",
-        title: "CEO & Founder at EyeCue Lab",
+        name: "Lee Cantrell",
+        title: "Senior Business Consultant at Experian",
         image: "https://randomuser.me/api/portraits/men/62.jpg",
-        content: "Matt is one of the best professionals that we have known in web development skills. He knows how to leverage the latest tech and comes in clutch when planning complex projects."
+        content: "Abin is one of the best professionals that we have known in web development skills. He knows how to leverage the latest tech and comes in clutch when planning complex projects."
     }
 ];
 
@@ -283,15 +283,15 @@ window.technicalSkillsData = [
     },
     {
         name: "Programming",
-        percentage: 85
+        percentage: 90
     },
     {
         name: "Database Design",
-        percentage: 80
+        percentage: 85
     },
     {
         name: "System Design",
-        percentage: 85
+        percentage: 80
     },
     {
         name: "Data Analysis",
@@ -327,9 +327,9 @@ window.heroData = {
 window.educationData = [
     {
         degree: "Bachelor of Technology",
-        field: "Computer Science & Engineering",
-        institution: "University Name",
-        period: "2008 - 2012",
+        field: "Applied Electronics and instrumentation",
+        institution: "MG University, Kerala, India",
+        period: "2002 - 2006",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
@@ -338,18 +338,18 @@ window.educationData = [
     },
     {
         degree: "Pre-Degree",
-        field: "Science",
-        institution: "College Name",
-        period: "2006 - 2008",
+        field: "Science Branch",
+        institution: "State Board, Kerala, India",
+        period: "2000 - 2002",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>`
     },
     {
         degree: "SSLC",
-        field: "High School",
-        institution: "School Name",
-        period: "2005 - 2006",
+        field: "General Branch",
+        institution: "State Board, Kerala, India",
+        period: "1999 - 2000",
         icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>`
