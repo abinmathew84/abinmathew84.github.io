@@ -72,15 +72,15 @@ window.skillsData = {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>`,
             skills: ["Flutter - Dart", "Windows Forms, WPF"]
-        },
-        {
+        }
+        /* {
             id: "design-tools",
             title: "Design Tools",
             icon: `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-black dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                 </svg>`,
             skills: ["Adobe Photoshop", "Adobe Dreamweaver", "DaVinci Resolve"]
-        }
+        } */
     ]
 };
 

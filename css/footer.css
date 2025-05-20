@@ -1,0 +1,53 @@
+/* Footer Styles */
+footer {
+    position: relative;
+    background-color: #f9fafb; /* Gray-50 for light mode */
+    color: #4b5563; /* Gray-600 for light mode */
+}
+
+/* Dark mode styles */
+.dark footer {
+    background-color: #1f2937; /* Gray-800 for dark mode */
+    color: #e5e7eb; /* Gray-200 for dark mode */
+}
+
+/* Magenta accent line at the top */
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ec4899; /* Pink-500 */
+}
+
+/* Footer content styling */
+footer .container {
+    padding: 2.5rem 1rem;
+}
+
+/* Footer links */
+footer a {
+    color: #4b5563; /* Gray-600 for light mode */
+    transition: color 0.3s ease;
+}
+
+.dark footer a {
+    color: #e5e7eb; /* Gray-200 for dark mode */
+}
+
+footer a:hover {
+    color: #111827; /* Gray-900 for light mode */
+}
+
+.dark footer a:hover {
+    color: #ffffff; /* White for dark mode */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    footer .container {
+        padding: 2rem 1rem;
+    }
+}
