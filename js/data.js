@@ -179,73 +179,61 @@ window.experienceData = [
         period: "May 2021 - Present",
         location: "Nottingham, UK",
         website: "https://www.nottingham.ac.uk/",
-        description: "Led the development of key features for the company's flagship product, resulting in a 30% increase in user engagement. Collaborated with cross-functional teams to implement new technologies and improve existing systems.",
+        description: `Application development, maintenance and enhancements, Lowcode Automation using Power Platforms, Process improvements and Innovation using Generative AI, CI/CD pipeline setup, Azure cloud resource setup, Conduct Expo's on Artificial Intelligence, System Design and Implementation`,
         skills: ["C#.NET", "VB.NET", "SPFX", "Node.js", "React", "TypeScript", "Microsoft Power Platform", "Azure DevOps", "Azure Cloud Services", "React", "Gen AI", "SQL Server"],
-        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff5722" class="w-full h-full">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-            </svg>`
+        logo: `<img src="./images/UoN.png" alt="University of Nottingham" class="w-full h-full object-contain">`
     },
     {
         title: "Senior Systems Analyst @ UST Global",
         period: "May 2019 - Apr 2021",
         location: "Trivandrum, India",
         website: "https://www.ust.com/",
-        description: "Developed and maintained web applications using modern JavaScript frameworks. Implemented responsive designs and optimized application performance.",
+        description: `Offshore coordinator, Reporting manager, Team Lead, Tech Lead, Automation and process improvements, Web and desktop application development, deployment, support`,
         skills: ["C#.NET", "Java", "SQL Server", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "IIS", "Tomcat", "Apache2"],
-        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4f46e5" class="w-full h-full">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-            </svg>`
+        logo: `<img src="./images/UST.svg" alt="UST Global" class="w-full h-full object-contain">`
     },
     {
         title: "Onsite Coordinator (UST) @ Experian",
         period: "Jul 2017 - Apr 2019",
         location: "Nottingham, UK",
         website: "https://www.experian.co.uk/",
-        description: "Worked on backend systems and APIs. Collaborated with the frontend team to ensure seamless integration.",
+        description: `Onsite coordinator, Team Lead, Technical Advisor, Automation, Web Development, Migration, Support, Setup CI/CD pipelines, Process Improvements, Windows Desktop Application development`,
         skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
-        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#10b981" class="w-full h-full">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-            </svg>`
+        logo: `<img src="./images/UST.svg" alt="UST Global" class="w-full h-full object-contain">`
     },
     {
         title: "Onsite Coordinator (NTT Data) @ Experian",
         period: "May 2016 - Jun 2017",
         location: "Nottingham, UK",
         website: "https://www.nttdata.com/",
-        description: "Assisted in the development of web applications and learned various technologies and frameworks.",
+        description: `Team Lead, Reporting Manager, Technical Advisor, Application Development (Web and Desktop), CI/CD pipeline setup, Automation, Process Improvements, Mentoring`,
         skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
-        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#f59e0b" class="w-full h-full">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-            </svg>`
+        logo: `<img src="./images/NTTData.jpeg" alt="NTT Data" class="w-full h-full object-contain">`
     },
     {
         title: "Onsite Coordinator (Dell International Services) @ Experian",
         period: "May 2013 - May 2016",
         location: "Nottingham, UK",
         website: "https://www.dell.com/",
-        description: "Gained hands-on experience in software development and worked on various projects under supervision.",
+        description: `Application development, maintenance, enhancemets, testing, deployment, Automation, Coordinating onshore and offshore, Team Lead, Mentoring`,
         skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
-        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#6366f1" class="w-full h-full">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-            </svg>`
+        logo: `<img src="./images/Dell.png" alt="Dell" class="w-full h-full object-contain">`
     },
     {
         title: "Software Development Analyst @ Dell International Services",
         period: "Jan 2010 - May 2013",
         location: "Bangalore, India",
         website: "https://www.dell.com/",
-        description: "Provided technical support to customers and resolved various software and hardware issues.",
+        description: `Application development in C#, Legacy VB6 Application Support, Mainframe development and support, Migration, Deployment, Testing, Automation`,
         skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
-        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ec4899" class="w-full h-full">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-            </svg>`
+        logo: `<img src="./images/Dell.png" alt="Dell" class="w-full h-full object-contain">`
     },
     {
         title: "Software Engineer @ Global Innova Technologies",
         period: "Jan 2007 - Jan 2009",
         location: "Bangalore, India",
         website: "http://globalinnovatechnologies.com/",
-        description: "Provided IT support and assistance to staff members. Managed hardware inventory and basic system administration tasks.",
+        description: "Application development, maintenance, Enhancements, Testing",
         skills: ["C#,", "Java", "SQL Server", "MySQL", "Ajax", "JQuery"],
         logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#a855f7" class="w-full h-full">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>

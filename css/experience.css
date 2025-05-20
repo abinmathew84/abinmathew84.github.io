@@ -32,6 +32,7 @@
     width: 100%;
     height: 75px; /* Fixed height to match the image */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .experience-header.active {
@@ -42,7 +43,7 @@
 .experience-header h3 {
     font-size: 0.95rem;
     font-weight: 500;
-    padding-left: 1.25rem;
+    padding-left: 0.5rem;
 }
 
 .experience-header .flex {
