@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('About data:', window.aboutData);
     console.log('Contact data:', window.contactData);
     console.log('Awards data:', window.awardsData);
+    console.log('Experience data:', window.experienceData);
+    console.log('Testimonials data:', window.testimonialsData);
     
     // Render skills from data
     renderSkills();
@@ -21,6 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Render awards from data
     renderAwards();
+    
+    // Render experience from data
+    renderExperience();
+    
+    // Render testimonials from data
+    renderTestimonials();
     
     // Dark mode toggle functionality
     const darkModeToggle = document.getElementById('darkModeToggle');
@@ -50,39 +58,90 @@ document.addEventListener('DOMContentLoaded', function() {
 // Function to render skills from data
 function renderSkills() {
     const skillsContainer = document.getElementById('skills-container');
-    if (!skillsContainer) return;
+    const technicalSkillsContainer = document.querySelector('.technical-skills-container');
+    const softSkillsContainer = document.querySelector('.soft-skills-container');
     
-    // Clear existing content
-    skillsContainer.innerHTML = '';
+    // Render skill categories
+    if (skillsContainer) {
+        // Clear existing content
+        skillsContainer.innerHTML = '';
+        
+        // Render each skill category
+        window.skillsData.categories.forEach((category, index) => {
+            const delay = 100 + (index * 50);
+            
+            const categoryElement = document.createElement('div');
+            categoryElement.className = 'bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md';
+            categoryElement.setAttribute('data-aos', 'fade-up');
+            categoryElement.setAttribute('data-aos-delay', delay);
+            
+            categoryElement.innerHTML = `
+                <div class="flex items-center mb-4">
+                    ${category.icon}
+                    <h3 class="text-xl font-semibold">${category.title}</h3>
+                </div>
+                <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                    ${category.skills.map(skill => `
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-black dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            ${skill}
+                        </li>
+                    `).join('')}
+                </ul>
+            `;
+            
+            skillsContainer.appendChild(categoryElement);
+        });
+    }
     
-    // Render each skill category
-    window.skillsData.categories.forEach((category, index) => {
-        const delay = 100 + (index * 50);
+    // Render technical skills
+    if (technicalSkillsContainer) {
+        technicalSkillsContainer.innerHTML = '';
         
-        const categoryElement = document.createElement('div');
-        categoryElement.className = 'bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md';
-        categoryElement.setAttribute('data-aos', 'fade-up');
-        categoryElement.setAttribute('data-aos-delay', delay);
+        window.technicalSkillsData.forEach(skill => {
+            const skillElement = document.createElement('div');
+            skillElement.className = 'mb-6';
+            
+            skillElement.innerHTML = `
+                <div class="flex justify-between mb-1">
+                    <span class="font-medium">${skill.name}</span>
+                    <span>${skill.percentage}%</span>
+                </div>
+                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-2">
+                    <div class="bg-black dark:bg-white h-2 rounded-full" style="width: ${skill.percentage}%"></div>
+                </div>
+            `;
+            
+            technicalSkillsContainer.appendChild(skillElement);
+        });
+    }
+    
+    // Render soft skills
+    if (softSkillsContainer) {
+        softSkillsContainer.innerHTML = '';
         
-        categoryElement.innerHTML = `
-            <div class="flex items-center mb-4">
-                ${category.icon}
-                <h3 class="text-xl font-semibold">${category.title}</h3>
-            </div>
-            <ul class="space-y-2 text-gray-600 dark:text-gray-400">
-                ${category.skills.map(skill => `
-                    <li class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-black dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        ${skill}
-                    </li>
-                `).join('')}
-            </ul>
-        `;
+        // Create a grid layout for soft skills
+        const softSkillsGrid = document.createElement('ul');
+        softSkillsGrid.className = 'space-y-3 text-lg text-gray-600 dark:text-gray-400 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-3';
         
-        skillsContainer.appendChild(categoryElement);
-    });
+        window.softSkillsData.forEach(skill => {
+            const skillElement = document.createElement('li');
+            skillElement.className = 'flex items-center';
+            
+            skillElement.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-black dark:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                ${skill}
+            `;
+            
+            softSkillsGrid.appendChild(skillElement);
+        });
+        
+        softSkillsContainer.appendChild(softSkillsGrid);
+    }
 }
 
 // Function to render projects from data
@@ -191,6 +250,160 @@ function renderAwards() {
         `;
         
         awardsContainer.appendChild(awardElement);
+    });
+}
+
+// Function to render experience from data
+function renderExperience() {
+    const experienceContainer = document.getElementById('experience-container');
+    if (!experienceContainer) return;
+    
+    // Clear existing content
+    experienceContainer.innerHTML = '';
+    
+    // Render each experience item
+    window.experienceData.forEach((experience, index) => {
+        const delay = 100 + (index * 50);
+        
+        const experienceItem = document.createElement('div');
+        experienceItem.className = 'experience-item';
+        experienceItem.setAttribute('data-aos', 'fade-up');
+        experienceItem.setAttribute('data-aos-delay', delay);
+        
+        experienceItem.innerHTML = `
+            <button class="experience-header">
+                <div>
+                    <h3>${experience.title}</h3>
+                </div>
+                <div class="flex items-center">
+                    <span class="mr-4">${experience.period}</span>
+                    <div class="toggle-icon">
+                        <span class="plus-icon">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                </div>
+            </button>
+            <div class="experience-content">
+                <div class="p-6">
+                    <!-- Company Logo -->
+                    <div class="experience-logo">
+                        ${experience.logo}
+                    </div>
+                    
+                    <!-- Meta Information -->
+                    <div class="experience-meta">
+                        <div class="experience-meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>${experience.location}</span>
+                        </div>
+                        <div class="experience-meta-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                            <span>${experience.website}</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Description -->
+                    <p class="experience-description">
+                        ${experience.description}
+                    </p>
+                    
+                    <!-- Skills -->
+                    <div class="experience-skills">
+                        ${experience.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        experienceContainer.appendChild(experienceItem);
+    });
+    
+    // Initialize the experience items after they are rendered
+    initializeExperienceItems();
+}
+
+// Function to initialize experience items (expand/collapse functionality)
+function initializeExperienceItems() {
+    // Get all experience headers
+    const experienceHeaders = document.querySelectorAll('.experience-header');
+    
+    // Function to close all experience items
+    function closeAllExperienceItems() {
+        experienceHeaders.forEach(header => {
+            header.classList.remove('active');
+            const content = header.nextElementSibling;
+            content.style.maxHeight = null;
+        });
+    }
+    
+    // Add click event listener to each header
+    experienceHeaders.forEach(header => {
+        header.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get the content element
+            const content = this.nextElementSibling;
+            
+            // Check if this item is already active
+            const isActive = this.classList.contains('active');
+            
+            // Close all items first
+            closeAllExperienceItems();
+            
+            // If the clicked item wasn't active, open it
+            if (!isActive) {
+                // Add active class to the header
+                this.classList.add('active');
+                
+                // Open the content
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    });
+    
+    // Ensure all experience items are closed by default
+    closeAllExperienceItems();
+}
+
+// Function to render testimonials from data
+function renderTestimonials() {
+    const testimonialsContainer = document.querySelector('.testimonials-container');
+    if (!testimonialsContainer) return;
+    
+    // Clear existing content
+    testimonialsContainer.innerHTML = '';
+    
+    // Render each testimonial
+    window.testimonialsData.forEach((testimonial, index) => {
+        const delay = 100 + (index * 100);
+        
+        const testimonialElement = document.createElement('div');
+        testimonialElement.className = 'testimonial';
+        testimonialElement.setAttribute('data-aos', 'fade-left');
+        testimonialElement.setAttribute('data-aos-delay', delay);
+        
+        testimonialElement.innerHTML = `
+            <div class="testimonial-quote">"</div>
+            <div class="testimonial-author-image">
+                <img src="${testimonial.image}" alt="${testimonial.name}">
+            </div>
+            <div class="testimonial-content">
+                ${testimonial.content}
+            </div>
+            <div class="testimonial-author">
+                <div class="testimonial-author-name">- ${testimonial.name}</div>
+                <div class="testimonial-author-title">${testimonial.title}</div>
+            </div>
+        `;
+        
+        testimonialsContainer.appendChild(testimonialElement);
     });
 }
     

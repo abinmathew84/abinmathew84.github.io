@@ -172,4 +172,147 @@ window.awardsData = [
     }
 ];
 
+// Experience data
+window.experienceData = [
+    {
+        title: "Senior Software Engineer @ Company Name 1",
+        period: "Jan 2023 - Present",
+        location: "London, UK",
+        website: "company1.com",
+        description: "Led the development of key features for the company's flagship product, resulting in a 30% increase in user engagement. Collaborated with cross-functional teams to implement new technologies and improve existing systems.",
+        skills: ["React", "Node.js", "TypeScript"],
+        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ff5722" class="w-full h-full">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>`
+    },
+    {
+        title: "Software Engineer @ Company Name 2",
+        period: "Mar 2020 - Dec 2022",
+        location: "Manchester, UK",
+        website: "company2.com",
+        description: "Developed and maintained web applications using modern JavaScript frameworks. Implemented responsive designs and optimized application performance.",
+        skills: ["JavaScript", "Vue.js", "CSS"],
+        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4f46e5" class="w-full h-full">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>`
+    },
+    {
+        title: "Developer @ Company Name 3",
+        period: "Jun 2018 - Feb 2020",
+        location: "Birmingham, UK",
+        website: "company3.com",
+        description: "Worked on backend systems and APIs. Collaborated with the frontend team to ensure seamless integration.",
+        skills: ["Java", "Spring", "SQL"],
+        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#10b981" class="w-full h-full">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>`
+    },
+    {
+        title: "Junior Developer @ Company Name 4",
+        period: "Sep 2016 - May 2018",
+        location: "Leeds, UK",
+        website: "company4.com",
+        description: "Assisted in the development of web applications and learned various technologies and frameworks.",
+        skills: ["HTML", "CSS", "JavaScript"],
+        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#f59e0b" class="w-full h-full">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>`
+    },
+    {
+        title: "Software Developer Intern @ Company Name 5",
+        period: "Jan 2015 - Aug 2016",
+        location: "Bristol, UK",
+        website: "company5.com",
+        description: "Gained hands-on experience in software development and worked on various projects under supervision.",
+        skills: ["C#", ".NET"],
+        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#6366f1" class="w-full h-full">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>`
+    },
+    {
+        title: "Technical Support @ Company Name 6",
+        period: "Jun 2013 - Dec 2014",
+        location: "Glasgow, UK",
+        website: "company6.com",
+        description: "Provided technical support to customers and resolved various software and hardware issues.",
+        skills: ["Customer Support", "Troubleshooting"],
+        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ec4899" class="w-full h-full">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>`
+    },
+    {
+        title: "IT Support @ Company Name 7",
+        period: "Feb 2012 - May 2013",
+        location: "Edinburgh, UK",
+        website: "company7.com",
+        description: "Provided IT support and assistance to staff members. Managed hardware inventory and basic system administration tasks.",
+        skills: ["IT Support", "Hardware", "Windows"],
+        logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#a855f7" class="w-full h-full">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>`
+    }
+];
+
+// Testimonials data
+window.testimonialsData = [
+    {
+        name: "Jonathan Brazeau",
+        title: "Product Design Leader at ChowNow",
+        image: "https://randomuser.me/api/portraits/men/32.jpg",
+        content: "Working with Matthew was an absolute game-changer for our company. He has this incredible knack for knowing exactly how a mockup is supposed to look and feel on the page. He was always collaborative and open to feedback and quick to offer thoughtful suggestions that elevated the design even further. It's rare to find someone who balances technical expertise with such a great eye for detail. He made the entire process seamless, and honestly, I'd jump at the chance to work with them again"
+    },
+    {
+        name: "Trevor Streiber",
+        title: "Lead Software Engineer at NewRelic",
+        image: "https://randomuser.me/api/portraits/men/75.jpg",
+        content: "Matt is AMAZING! If you have any doubt about hiring him, ask me – he'll never disappoint you!"
+    },
+    {
+        name: "Rick Hou",
+        title: "CEO & Founder at EyeCue Lab",
+        image: "https://randomuser.me/api/portraits/men/62.jpg",
+        content: "Matt is one of the best professionals that we have known in web development skills. He knows how to leverage the latest tech and comes in clutch when planning complex projects."
+    }
+];
+
+// Technical skills data
+window.technicalSkillsData = [
+    {
+        name: "UI/UX Design",
+        percentage: 90
+    },
+    {
+        name: "Programming",
+        percentage: 85
+    },
+    {
+        name: "Database Design",
+        percentage: 80
+    },
+    {
+        name: "System Design",
+        percentage: 85
+    },
+    {
+        name: "Data Analysis",
+        percentage: 75
+    }
+];
+
+// Soft skills data
+window.softSkillsData = [
+    "Innovation Driven",
+    "Problem Solving",
+    "Communication",
+    "Leadership & Mentoring",
+    "Adaptability",
+    "Analytical Thinking",
+    "Team Collaboration",
+    "Initiatives & Ownership",
+    "Critical Thinking",
+    "Attention to Detail",
+    "Continuous Learner",
+    "Mentorship"
+];
+
 // No need to export as we're using window objects
