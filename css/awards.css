@@ -48,6 +48,15 @@
     color: #9ca3af; /* Gray-400 */
 }
 
+.dark .award-logo svg {
+    fill: #ffffff;
+}
+
+.dark .award-logo svg path,
+.dark .award-logo svg g {
+    fill: #ffffff;
+}
+
 /* Responsive styles */
 @media (max-width: 1024px) {
     .awards-container {
