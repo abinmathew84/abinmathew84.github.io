@@ -22,7 +22,7 @@
     transition: all 0.3s ease;
     padding: 0;
     border-radius: 0.5rem;
-    background-color: #000000; /* Black color for light mode */
+    background-color: #1f2937; /* Black color for light mode */
     color: white;
     font-weight: 500;
     display: flex;
@@ -31,6 +31,7 @@
     cursor: pointer;
     width: 100%;
     height: 75px; /* Fixed height to match the image */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .experience-header.active {
@@ -100,11 +101,12 @@
     transition: max-height 0.5s ease;
     overflow: hidden;
     max-height: 0;
-    background-color: #1a1a1a; /* Dark grey for light mode */
+    background-color: white; /* White for light mode */
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    color: white;
+    color: #111827; /* Dark text for light mode */
     width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .experience-content .p-6 {
@@ -128,12 +130,13 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #d1d5db;
+    color: #6b7280; /* Gray-500 for light mode */
 }
 
 .experience-description {
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    color: #6b7280; /* Gray-500 for light mode */
 }
 
 .experience-skills {
@@ -157,7 +160,16 @@
     }
     
     .experience-content {
-        background-color: #111827; /* Darker grey for content in dark mode */
+        background-color: #1f2937; /* Dark grey for dark mode - same as skills section */
+        color: #f9fafb; /* White text for dark mode */
+    }
+    
+    .experience-meta-item {
+        color: #9ca3af; /* Gray-400 for dark mode */
+    }
+    
+    .experience-description {
+        color: #9ca3af; /* Gray-400 for dark mode */
     }
     
     .skill-tag {

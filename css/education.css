@@ -20,7 +20,7 @@
 
 @media (prefers-color-scheme: dark) {
     .education-timeline::before {
-        background-color: #ffffff;
+        background-color: #374151; /* Dark grey for dark mode */
     }
 }
 
@@ -41,23 +41,23 @@
     padding: 1.5rem;
     background-color: #ffffff;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .timeline-content:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
     .timeline-content {
-        background-color: #111827; /* Darker background for dark mode */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        background-color: #1f2937; /* Dark grey for dark mode - same as skills section */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     }
     
     .timeline-content:hover {
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -95,7 +95,7 @@
 
 @media (prefers-color-scheme: dark) {
     .timeline-dot {
-        background-color: #ffffff;
+        background-color: #374151; /* Dark grey for dark mode */
     }
     
     .timeline-dot svg {
@@ -134,18 +134,18 @@
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #000000;
+    color: #111827; /* Dark text for light mode */
 }
 
 .timeline-content p {
-    color: #6b7280;
+    color: #6b7280; /* Gray-500 for light mode */
     margin-bottom: 0.5rem;
 }
 
 .timeline-content .institution {
     display: flex;
     align-items: center;
-    color: #6b7280;
+    color: #6b7280; /* Gray-500 for light mode */
     font-size: 0.875rem;
 }
 
@@ -156,12 +156,16 @@
 
 @media (prefers-color-scheme: dark) {
     .timeline-content h3 {
-        color: #ffffff;
+        color: #f9fafb; /* White text for dark mode */
     }
     
     .timeline-content p,
     .timeline-content .institution {
-        color: #9ca3af;
+        color: #9ca3af; /* Gray-400 for dark mode */
+    }
+    
+    .timeline-content .institution svg {
+        color: #9ca3af; /* Gray-400 for dark mode */
     }
 }
 
