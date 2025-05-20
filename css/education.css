@@ -1,0 +1,192 @@
+/* Education Timeline Styles */
+.education-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Timeline vertical line */
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #000000;
+    transform: translateX(-50%);
+}
+
+@media (prefers-color-scheme: dark) {
+    .education-timeline::before {
+        background-color: #ffffff;
+    }
+}
+
+/* Timeline items */
+.timeline-item {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Content container */
+.timeline-content {
+    position: relative;
+    width: calc(50% - 2rem);
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .timeline-content {
+        background-color: #111827; /* Darker background for dark mode */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .timeline-content:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Left side items */
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+}
+
+/* Right side items */
+.timeline-item:nth-child(even) .timeline-content {
+    margin-right: auto;
+}
+
+/* Timeline dots */
+.timeline-dot {
+    position: absolute;
+    top: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot {
+    left: calc(50% - 1rem);
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    right: calc(50% - 1rem);
+}
+
+@media (prefers-color-scheme: dark) {
+    .timeline-dot {
+        background-color: #ffffff;
+    }
+    
+    .timeline-dot svg {
+        color: #1f2937;
+    }
+}
+
+/* Timeline date */
+.timeline-date {
+    position: absolute;
+    top: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.timeline-item:nth-child(odd) .timeline-date {
+    right: calc(50% + 2.5rem);
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+    left: calc(50% + 2.5rem);
+}
+
+@media (prefers-color-scheme: dark) {
+    .timeline-date {
+        background-color: #374151;
+    }
+}
+
+/* Timeline content styles */
+.timeline-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+.timeline-content p {
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content .institution {
+    display: flex;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.timeline-content .institution svg {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .timeline-content h3 {
+        color: #ffffff;
+    }
+    
+    .timeline-content p,
+    .timeline-content .institution {
+        color: #9ca3af;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .education-timeline::before {
+        left: 2rem;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 4rem);
+        margin-left: 4rem !important;
+    }
+    
+    .timeline-dot {
+        left: 1rem !important;
+        right: auto !important;
+    }
+    
+    .timeline-date {
+        position: relative;
+        top: auto;
+        right: auto !important;
+        left: auto !important;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+}
