@@ -18,10 +18,8 @@
     transform: translateX(-50%);
 }
 
-@media (prefers-color-scheme: dark) {
-    .education-timeline::before {
-        background-color: #374151; /* Dark grey for dark mode */
-    }
+.dark .education-timeline::before {
+    background-color: #374151; /* Dark grey for dark mode */
 }
 
 /* Timeline items */
@@ -50,15 +48,13 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-    .timeline-content {
-        background-color: #1f2937; /* Dark grey for dark mode - same as skills section */
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    }
-    
-    .timeline-content:hover {
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    }
+.dark .timeline-content {
+    background-color: #232c39; /* Dark grey for dark mode - same as skills section #1f2937*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dark .timeline-content:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 /* Left side items */
@@ -93,14 +89,12 @@
     right: calc(50% - 1rem);
 }
 
-@media (prefers-color-scheme: dark) {
-    .timeline-dot {
-        background-color: #374151; /* Dark grey for dark mode */
-    }
-    
-    .timeline-dot svg {
-        color: #1f2937;
-    }
+.dark .timeline-dot {
+    background-color: #374151; /* Dark grey for dark mode */
+}
+
+.dark .timeline-dot svg {
+    color: #1f2937;
 }
 
 /* Timeline date */
@@ -123,10 +117,8 @@
     left: calc(50% + 2.5rem);
 }
 
-@media (prefers-color-scheme: dark) {
-    .timeline-date {
-        background-color: #374151;
-    }
+.dark .timeline-date {
+    background-color: #374151;
 }
 
 /* Timeline content styles */
@@ -154,19 +146,17 @@
     flex-shrink: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-    .timeline-content h3 {
-        color: #f9fafb; /* White text for dark mode */
-    }
-    
-    .timeline-content p,
-    .timeline-content .institution {
-        color: #9ca3af; /* Gray-400 for dark mode */
-    }
-    
-    .timeline-content .institution svg {
-        color: #9ca3af; /* Gray-400 for dark mode */
-    }
+.dark .timeline-content h3 {
+    color: #f9fafb; /* White text for dark mode */
+}
+
+.dark .timeline-content p,
+.dark .timeline-content .institution {
+    color: #9ca3af; /* Gray-400 for dark mode */
+}
+
+.dark .timeline-content .institution svg {
+    color: #9ca3af; /* Gray-400 for dark mode */
 }
 
 /* Responsive styles */

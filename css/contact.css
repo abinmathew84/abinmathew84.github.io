@@ -25,6 +25,7 @@
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 /* Contact Form Side */
