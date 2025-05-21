@@ -1,0 +1,18 @@
+/* Logo Styles */
+.site-logo {
+    height: 80px;
+    width: auto;
+    display: block;
+}
+
+/* Dark mode filter to make the logo white */
+.dark .site-logo {
+    filter: brightness(0) invert(1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .site-logo {
+        height: 32px;
+    }
+}

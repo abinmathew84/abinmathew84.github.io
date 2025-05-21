@@ -1,0 +1,46 @@
+/* Common Section Styles */
+section {
+    position: relative;
+}
+
+/* Accent line is only for contact section (defined in contact.css) */
+
+/* Section Headings */
+section h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    width: 6rem;
+    height: 0.25rem;
+    background-color: #06b6d4; /* Cyan-500 */
+}
+
+/* Center alignment for section headings */
+.section-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.section-heading-container h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 2.5rem;
+    }
+}

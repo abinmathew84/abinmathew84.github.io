@@ -1,0 +1,151 @@
+/* Footer Styles */
+footer {
+    position: relative;
+    background-color: #f9fafb; /* Gray-50 for light mode */
+    color: #4b5563; /* Gray-600 for light mode */
+}
+
+/* Dark mode styles */
+.dark footer {
+    background-color: #1f2937; /* Gray-800 for dark mode */
+    color: #e5e7eb; /* Gray-200 for dark mode */
+}
+
+/* Magenta accent line at the top */
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ec4899; /* Pink-500 */
+}
+
+/* Footer content styling */
+footer .container {
+    padding: 0.05rem 0.05rem;
+}
+
+/* Social Icons */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #4b5563; /* Gray-600 for light mode */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.dark .social-icon {
+    color: #e5e7eb; /* Gray-200 for dark mode */
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects */
+.social-icon:hover svg {
+    transform: scale(1.2);
+}
+
+/* GitHub hover effect */
+.social-icon.github:hover {
+    color: #ffffff;
+}
+
+.social-icon.github::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.social-icon.github:hover::before {
+    transform: scale(1);
+}
+
+/* LinkedIn hover effect */
+.social-icon.linkedin:hover {
+    color: #ffffff;
+}
+
+.social-icon.linkedin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0077b5;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.social-icon.linkedin:hover::before {
+    transform: scale(1);
+}
+
+/* Twitter hover effect */
+.social-icon.twitter:hover {
+    color: #ffffff;
+}
+
+.social-icon.twitter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1da1f2;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.social-icon.twitter:hover::before {
+    transform: scale(1);
+}
+
+/* Dark mode styles for social icons */
+.dark .social-icon.github:hover,
+.dark .social-icon.linkedin:hover,
+.dark .social-icon.twitter:hover {
+    color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    footer .container {
+        padding: 0.05rem 0.05rem;
+    }
+    
+    .social-icon {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .social-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}

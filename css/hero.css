@@ -1,0 +1,191 @@
+/* Hero Section Styles */
+#home {
+    background-color: white; /* Light mode background */
+    color: #111827; /* Dark text for light mode */
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Dark mode styles */
+.dark #home {
+    background-color: #0e1117; /* Very dark blue/black background for dark mode */
+    color: white; /* Light text for dark mode */
+}
+
+/* Diagonal lines background effect */
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.02) 12.5%, /* Subtle black stripes for light mode */
+      transparent 12.5%, 
+      transparent 50%, 
+      rgba(0, 0, 0, 0.02) 50%, 
+      rgba(0, 0, 0, 0.02) 62.5%, 
+      transparent 62.5%, 
+      transparent 100%
+    );
+    background-size: 40px 40px;
+    animation: moveStripes 70s linear infinite;
+    z-index: 1;
+}
+
+.dark #home::before {
+    background-image: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.02) 12.5%, /* Subtle white stripes for dark mode */
+      transparent 12.5%, 
+      transparent 50%, 
+      rgba(255, 255, 255, 0.02) 50%, 
+      rgba(255, 255, 255, 0.02) 62.5%, 
+      transparent 62.5%, 
+      transparent 100%
+    );
+    background-size: 40px 40px;
+    animation: moveStripes 70s linear infinite;
+    z-index: 1;
+}
+
+@keyframes moveStripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-tag {
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    font-weight: 800;
+}
+
+.tag-bracket {
+    color: #4b5563; /* Dark grey in light mode */
+}
+
+.dark .tag-bracket {
+    color: #ffffff; /* White in dark mode */
+}
+
+.tag-name {
+    color: #06b6d4; /* Cyan color */
+}
+
+.tag-action {
+    color: #4ade80; /* Green color */
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease, max-width 0.3s ease;
+    margin-left: 4px;
+    max-width: 0;
+    overflow: hidden;
+}
+
+.hero-tag:hover .tag-action {
+    opacity: 1;
+    max-width: 500px; /* Further increased to ensure nothing is truncated */
+}
+
+.tag-slash {
+    color: #a855f7; /* Purple color */
+}
+
+.hero-name {
+    font-size: 10rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.05rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 80px;
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Light mode border */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    z-index: 2;
+}
+
+.dark .scroll-indicator {
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Dark mode border */
+}
+
+.scroll-indicator-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #06b6d4; /* Cyan color */
+    border-radius: 50%;
+    animation: scrollAnimation 2s infinite;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero-name {
+        font-size: 4rem;
+    }
+    
+    .hero-title {
+        font-size: 1rem;
+    }
+    
+    .hero-tag {
+        font-size: 1.5rem;
+    }
+}

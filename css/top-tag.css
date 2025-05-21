@@ -1,0 +1,60 @@
+/* Top Tag Styles */
+.top-tag-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.top-tag {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    background-color: rgba(14, 17, 23, 0.8); /* Dark background with some transparency */
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 180px; /* Initial width */
+}
+
+.top-tag:hover {
+    max-width: 300px; /* Expanded width on hover */
+}
+
+.tag-name {
+    color: #06b6d4; /* Cyan color for the name */
+}
+
+.tag-action {
+    color: #4ade80; /* Green color for the onClick part */
+    display: inline-block;
+    overflow: hidden;
+    max-width: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.top-tag:hover .tag-action {
+    max-width: 200px;
+    opacity: 1;
+    margin-left: 4px;
+}
+
+/* Light mode styles */
+.light-mode .top-tag {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #111827;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode styles */
+.dark .top-tag {
+    background-color: rgba(14, 17, 23, 0.8);
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
