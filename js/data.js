@@ -179,7 +179,7 @@ window.experienceData = [
         period: "May 2021 - Present",
         location: "Nottingham, UK",
         website: "https://www.nottingham.ac.uk/",
-        description: `Application development, maintenance and enhancements, Lowcode Automation using Power Platforms, Process improvements and Innovation using Generative AI, CI/CD pipeline setup, Azure cloud resource setup, Conduct Expo's on Artificial Intelligence, System Design and Implementation`,
+        description: `End-to-end application development, maintenance, and enhancements using C#, VB.NET, React, Node.js, and SPFx. Automated workflows and streamlined operations using Power Platform tools such as Power Apps, Power Automate, and Power Virtual Agents. Designed and developed a new WebClock system for time reporting, successfully deployed across three university campuses. Built and integrated AI-powered chatbots using Generative AI and Large Language Models (LLMs) to enhance user interaction and support. Drove process optimization through innovation, configured CI/CD pipelines, and established scalable Azure cloud infrastructure. Led system architecture design and implementation while actively contributing to AI knowledge sharing through expos and workshops.`,
         skills: ["C#.NET", "VB.NET", "SPFX", "Node.js", "React", "TypeScript", "Microsoft Power Platform", "Azure DevOps", "Azure Cloud Services", "React", "Gen AI", "SQL Server"],
         logo: `<img src="./images/UoN.png" alt="University of Nottingham" class="w-full h-full object-contain">`
     },
@@ -188,7 +188,7 @@ window.experienceData = [
         period: "May 2019 - Apr 2021",
         location: "Trivandrum, India",
         website: "https://www.ust.com/",
-        description: `Offshore coordinator, Reporting manager, Team Lead, Tech Lead, Automation and process improvements, Web and desktop application development, deployment, support`,
+        description: `Led cross-functional teams in key roles such as Offshore Coordinator, Reporting Manager, Team Lead, and Technical Lead, ensuring seamless collaboration across global units. Spearheaded automation and process improvement initiatives to drive efficiency and scalability. Successfully delivered end-to-end solutions, including the development, deployment, and support of robust web and desktop applications aligned with business goals.`,
         skills: ["C#.NET", "Java", "SQL Server", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "IIS", "Tomcat", "Apache2"],
         logo: `<img src="./images/UST.svg" alt="UST Global" class="w-full h-full object-contain">`
     },
@@ -197,7 +197,7 @@ window.experienceData = [
         period: "Jul 2017 - Apr 2019",
         location: "Nottingham, UK",
         website: "https://www.experian.co.uk/",
-        description: `Onsite coordinator, Team Lead, Technical Advisor, Automation, Web Development, Migration, Support, Setup CI/CD pipelines, Process Improvements, Windows Desktop Application development`,
+        description: `Held key roles as Onsite Coordinator, Team Lead, and Technical Advisor, guiding teams through complex projects and ensuring stakeholder alignment. Led initiatives in automation, process improvements, and CI/CD pipeline setup to streamline development workflows. Delivered full-cycle solutions across web and Windows desktop platforms, including application development, migration, and ongoing support, with a strong focus on reliability, performance, and scalability.`,
         skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
         logo: `<img src="./images/UST.svg" alt="UST Global" class="w-full h-full object-contain">`
     },
@@ -206,7 +206,7 @@ window.experienceData = [
         period: "May 2016 - Jun 2017",
         location: "Nottingham, UK",
         website: "https://www.nttdata.com/",
-        description: `Team Lead, Reporting Manager, Technical Advisor, Application Development (Web and Desktop), CI/CD pipeline setup, Automation, Process Improvements, Mentoring`,
+        description: `Worked as Team Lead, Reporting Manager, and Technical Advisor, driving end-to-end application development across both web and desktop platforms. Played a key role in setting up and optimizing CI/CD pipelines for efficient delivery. Led automation and process improvement initiatives to enhance productivity and reduce manual effort. Actively mentored team members, fostering growth, knowledge sharing, and a collaborative development culture.`,
         skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
         logo: `<img src="./images/NTTData.jpeg" alt="NTT Data" class="w-full h-full object-contain">`
     },
@@ -215,7 +215,7 @@ window.experienceData = [
         period: "May 2013 - May 2016",
         location: "Nottingham, UK",
         website: "https://www.dell.com/",
-        description: `Application development, maintenance, enhancemets, testing, deployment, Automation, Coordinating onshore and offshore, Team Lead, Mentoring`,
+        description: `Led full-cycle application development including maintenance, enhancements, testing, and deployment for high-performance solutions. Drove automation initiatives to improve efficiency and reduce manual tasks. Acted as a key coordinator between onshore and offshore teams to ensure smooth project execution. Served as Team Lead, providing technical guidance and mentoring to support team growth and successful delivery.`,
         skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
         logo: `<img src="./images/Dell.png" alt="Dell" class="w-full h-full object-contain">`
     },
@@ -224,7 +224,7 @@ window.experienceData = [
         period: "Jan 2010 - May 2013",
         location: "Bangalore, India",
         website: "https://www.dell.com/",
-        description: `Application development in C#, Legacy VB6 Application Support, Mainframe development and support, Migration, Deployment, Testing, Automation`,
+        description: `Delivered end-to-end application development using C# while providing ongoing support for legacy VB6 applications. Contributed to mainframe development and support, ensuring seamless integration with modern systems. Led efforts in system migration, deployment, and testing, with a strong focus on quality and stability. Implemented automation to streamline repetitive tasks and improve overall efficiency.`,
         skills: ["C#.NET", "Java", "Unix", "Veracode", "HTML", "Javascript", "Windows Forms", "VB.NET", "VB6", "SQL Server"],
         logo: `<img src="./images/Dell.png" alt="Dell" class="w-full h-full object-contain">`
     },
@@ -233,7 +233,7 @@ window.experienceData = [
         period: "Jan 2007 - Jan 2009",
         location: "Bangalore, India",
         website: "http://globalinnovatechnologies.com/",
-        description: "Application development, maintenance, Enhancements, Testing",
+        description: "Developed robust applications using C# and Java with MySQL and SQL Server as backend databases. Handled end-to-end lifecycle activities including maintenance, feature enhancements, and comprehensive testing to ensure high-quality, reliable software solutions. Focused on building scalable systems aligned with business needs.",
         skills: ["C#,", "Java", "SQL Server", "MySQL", "Ajax", "JQuery"],
         logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#a855f7" class="w-full h-full">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
