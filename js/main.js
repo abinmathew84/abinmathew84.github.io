@@ -198,15 +198,10 @@ function renderAbout() {
     const bioElement = document.getElementById('bio');
     const journeyElement = document.getElementById('journey');
     const hobbiesElement = document.getElementById('hobbies');
-    const profileImageContainer = document.getElementById('profile-image-container');
     
     if (bioElement) bioElement.textContent = window.aboutData.bio;
     if (journeyElement) journeyElement.textContent = window.aboutData.journey;
     if (hobbiesElement) hobbiesElement.textContent = window.aboutData.hobbies;
-    
-    if (profileImageContainer && window.aboutData.image) {
-        profileImageContainer.innerHTML = `<img src="${window.aboutData.image}" alt="Abin Mathew" class="w-full h-full object-cover">`;
-    }
 }
 
 // Function to render contact information from data
