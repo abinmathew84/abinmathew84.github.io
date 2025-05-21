@@ -1,6 +1,7 @@
 /* Common Section Styles */
 section {
     position: relative;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 /* Accent line is only for contact section (defined in contact.css) */

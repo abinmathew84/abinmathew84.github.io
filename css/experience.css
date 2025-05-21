@@ -22,8 +22,8 @@
     transition: all 0.3s ease;
     padding: 0;
     border-radius: 0.5rem;
-    background-color: #1f2937; /* Black color for light mode */
-    color: white;
+    background-color: #ffffff; /* Light gray for light mode */
+    color: #111827; /* Dark text for light mode */
     font-weight: 500;
     display: flex;
     justify-content: space-between;
@@ -78,7 +78,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: #111827; /* Dark color for light mode */
     transform: translateY(-50%);
     transition: transform 0.3s ease;
 }
@@ -89,7 +89,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: #111827; /* Dark color for light mode */
     transform: translateY(-50%) rotate(90deg);
     transition: transform 0.3s ease;
 }
@@ -146,34 +146,26 @@
     gap: 0.5rem;
 }
 
-.skill-tag {
-    background-color: #333333; /* Dark grey for skill tags */
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
+/* Dark mode adjustments */
+.dark .experience-header {
+    background-color: #1f2937; /* Dark grey for dark mode */
+    color: white; /* Light text for dark mode */
 }
 
-/* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
-    .experience-header {
-        background-color: #1f2937; /* Dark grey for dark mode */
-    }
-    
-    .experience-content {
-        background-color: #1f2937; /* Dark grey for dark mode - same as skills section */
-        color: #f9fafb; /* White text for dark mode */
-    }
-    
-    .experience-meta-item {
-        color: #9ca3af; /* Gray-400 for dark mode */
-    }
-    
-    .experience-description {
-        color: #9ca3af; /* Gray-400 for dark mode */
-    }
-    
-    .skill-tag {
-        background-color: #374151; /* Medium grey for skill tags in dark mode */
-    }
+.dark .plus-icon span:first-child,
+.dark .plus-icon span:last-child {
+    background-color: white; /* Light color for dark mode */
+}
+
+.dark .experience-content {
+    background-color: #1f2937; /* Dark grey for dark mode - same as skills section */
+    color: #f9fafb; /* White text for dark mode */
+}
+
+.dark .experience-meta-item {
+    color: #9ca3af; /* Gray-400 for dark mode */
+}
+
+.dark .experience-description {
+    color: #9ca3af; /* Gray-400 for dark mode */
 }
