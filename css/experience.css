@@ -149,7 +149,7 @@
 /* Dark mode adjustments */
 .dark .experience-header {
     background-color: #1f2937; /* Dark grey for dark mode */
-    color: white; /* Light text for dark mode */
+    color: rgb(203, 202, 202); /* Light text for dark mode */
 }
 
 .dark .plus-icon span:first-child,
